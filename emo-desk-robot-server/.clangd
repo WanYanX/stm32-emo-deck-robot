@@ -1,0 +1,11 @@
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - -std=c++17
+    - -I.
+    - -Ispdlog/include
+    - -IcJSON/include
+    - -DSPDLOG_HEADER_ONLY
+    - -DUNICODE
+    - -D_UNICODE
+

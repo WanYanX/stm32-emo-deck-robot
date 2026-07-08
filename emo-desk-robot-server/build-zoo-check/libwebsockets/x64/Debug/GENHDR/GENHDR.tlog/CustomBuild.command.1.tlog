@@ -1,0 +1,32 @@
+^C:\USERS\WANYAN\DESKTOP\STM32\2\EMO-DESK-ROBOT-SERVER\BUILD-ZOO-CHECK\LIBWEBSOCKETS\LWS_CONFIG.H
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/libwebsockets/include/libwebsockets.h C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/include/libwebsockets.h
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/libwebsockets/include/libwebsockets/ C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/include/libwebsockets
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/lws_config.h C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/include/lws_config.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\WANYAN\DESKTOP\STM32\2\EMO-DESK-ROBOT-SERVER\BUILD-ZOO-CHECK\CMAKEFILES\C73461EC32DFD63CD310FBDB8EE380E0\GENHDR.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\WANYAN\DESKTOP\STM32\2\EMO-DESK-ROBOT-SERVER\LIBWEBSOCKETS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server -BC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check --check-stamp-file C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

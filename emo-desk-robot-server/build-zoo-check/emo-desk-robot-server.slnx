@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="libwebsockets/GENHDR.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="567fcce4-687a-351c-b6af-6bce01a344bb">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="libwebsockets/dist.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d47a8548-0ec5-3b27-9415-6e6f0a729a6e">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="emo-desk-robot-server.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="a5989644-2d4d-3584-9322-b6fbde1e21a8">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="opus/opus.vcxproj"/>
+		<BuildDependency Project="libwebsockets/lib/websockets.vcxproj"/>
+	</Project>
+	<Project Path="opus/opus.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="753ee6fc-a9f3-3b26-98a3-8737e18b31dd">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="opus/test_opus_api.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="13f1770b-137c-3f90-bdd8-ef393f82389b">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="opus/opus.vcxproj"/>
+	</Project>
+	<Project Path="opus/test_opus_decode.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8fcd57da-d178-3956-8a08-b5697287d5cc">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="opus/opus.vcxproj"/>
+	</Project>
+	<Project Path="opus/test_opus_encode.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="72f9162a-7f40-31ba-bf74-3e36315ac9c0">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="opus/opus.vcxproj"/>
+	</Project>
+	<Project Path="opus/test_opus_extensions.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b39c0432-db1b-3d04-9f50-9ab5f795f148">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="opus/opus.vcxproj"/>
+	</Project>
+	<Project Path="opus/test_opus_padding.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e473acc6-05b4-3c3b-96fa-c3fda602dd76">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="opus/opus.vcxproj"/>
+	</Project>
+	<Project Path="libwebsockets/lib/websockets.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4fc001a7-c60f-363c-986a-2043605003d1">
+		<BuildDependency Project="libwebsockets/GENHDR.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Folder Name="/CMakePredefinedTargets/">
+		<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="1ed71647-cd26-3b48-9351-93ff15b28658" DefaultStartup="true">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="emo-desk-robot-server.vcxproj"/>
+			<BuildDependency Project="opus/opus.vcxproj"/>
+			<BuildDependency Project="opus/test_opus_api.vcxproj"/>
+			<BuildDependency Project="opus/test_opus_decode.vcxproj"/>
+			<BuildDependency Project="opus/test_opus_encode.vcxproj"/>
+			<BuildDependency Project="opus/test_opus_extensions.vcxproj"/>
+			<BuildDependency Project="opus/test_opus_padding.vcxproj"/>
+			<BuildDependency Project="libwebsockets/lib/websockets.vcxproj"/>
+		</Project>
+		<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="43f8f03c-0f5b-3a8b-91a6-9571b969c71e">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="PACKAGE.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="bfb989a4-fd6a-3064-8d5b-e92b4c7284bb">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8bd2922b-c069-3e4f-94f8-90aba6de48bf"/>
+	</Folder>
+	<Folder Name="/CTestDashboardTargets/">
+		<Project Path="libwebsockets/Continuous.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="90f2491a-9798-33a4-8beb-12af9a256a51">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="libwebsockets/Experimental.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="1c42ed5f-1abe-38a1-a1f8-e70fffd6f752">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="libwebsockets/Nightly.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="2ab05a0e-487c-3491-98e0-16bedfceb624">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="libwebsockets/NightlyMemoryCheck.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c9896ef4-e16f-3035-b206-b69132ae89a3">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+	</Folder>
+</Solution>

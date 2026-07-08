@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4FC001A7-C60F-363C-986A-2043605003D1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>websockets</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">websockets.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">websockets_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">websockets.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">websockets_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">websockets.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">websockets_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">websockets.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">websockets_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>5105</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LWS_BUILDING_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LWS_BUILDING_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>5105</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_BUILDING_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_BUILDING_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>5105</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_BUILDING_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_BUILDING_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>5105</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_BUILDING_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_BUILDING_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\include;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\..\..\..\win32port\win32helpers\zlib;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\.\async-dns;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\metrics\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\.;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\..\poll;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\media;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\compression;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\..\core;C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\serialized\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/libwebsockets/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server -BC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check --check-stamp-file C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\cmake\lws_config_private.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/libwebsockets/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server -BC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check --check-stamp-file C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\cmake\lws_config_private.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/libwebsockets/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server -BC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check --check-stamp-file C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\cmake\lws_config_private.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/libwebsockets/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server -BC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check --check-stamp-file C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/libwebsockets/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\cmake\lws_config_private.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-fds.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-file.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-init.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-misc.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-pipe.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-plugins.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-service.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-sockets.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-resolv.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-spawn.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers\gettimeofday.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\lws_dll2.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\alloc.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\buflist.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\context.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\lws_map.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\adapt.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\libwebsockets.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\logs.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\vfs.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\base64-decode.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\prng.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lws-crc32.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lws-ring.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\cache-ttl\lws-cache-ttl.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\cache-ttl\heap.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\cache-ttl\file.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\upng-gzip.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\upng.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\jpeg.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-rect.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-font-mcufont.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-text.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-ss.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-png.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-jpeg.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-lhp.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\jrpc\jrpc.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dir.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dir-notify\dir-notify.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lwsac\lwsac.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lwsac\cached-file.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\sha-1.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lejp.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lhp.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lhp-ss.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\stdin.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\system.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\policy.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\async-dns\async-dns.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\async-dns\async-dns-parse.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\dummy-callback.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\output.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\close.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\network.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\vhost.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\pollfd.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\service.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\sorted-usec-list.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\wsi.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\wsi-timeout.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\adopt.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\txpacer.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\pipe\ops-pipe.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\stub.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\async-ipc.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\wol.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\client.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\connect.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\connect2.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\connect3.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\connect4.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\sort-dns.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\conmon.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\header.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\date.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\parsers.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\server\server.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\server\lws-spa.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\cookie.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\server\lejp-conf.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1\ops-h1.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws\ops-ws.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws\client-ws.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws\client-parser-ws.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws\server-ws.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt\ops-raw-skt.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file\ops-raw-file.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen\ops-listen.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\client\client-http.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\poll.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\secure-streams.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\policy-common.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\system\captive-portal-detect\captive-portal-detect.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\protocols\ss-raw.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\policy-json.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\system\fetch-policy\fetch-policy.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\protocols\ss-h1.c" />
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\protocols\ss-ws.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\ZERO_CHECK.vcxproj">
+      <Project>{8BD2922B-C069-3E4F-94F8-90ABA6DE48BF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\build-zoo-check\libwebsockets\GENHDR.vcxproj">
+      <Project>{567FCCE4-687A-351C-B6AF-6BCE01A344BB}</Project>
+      <Name>GENHDR</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

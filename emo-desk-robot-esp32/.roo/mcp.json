@@ -1,0 +1,13 @@
+{
+	"mcpServers": {
+		"esp-cn-docs": {
+			"type": "streamable-http",
+			"url": "https://mcp.espressif.com/docs",
+			"disabled": false,
+			"timeout": 60,
+			"alwaysAllow": [
+				"search_espressif_sources"
+			]
+		}
+	}
+}

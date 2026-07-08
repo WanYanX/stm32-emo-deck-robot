@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\opus\tests\test_opus_decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\opus\tests\test_opus_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\opus\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{98B5282F-8025-3E87-A09C-444108BF61FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F7C6DC5C-8829-303F-B150-59F68A6C8EE0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

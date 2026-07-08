@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-fds.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-pipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-plugins.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-service.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-sockets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-resolv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\plat\windows\windows-spawn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\win32port\win32helpers\gettimeofday.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\lws_dll2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\buflist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\lws_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\adapt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\libwebsockets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\logs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core\vfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\base64-decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\prng.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lws-crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lws-ring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\cache-ttl\lws-cache-ttl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\cache-ttl\heap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\cache-ttl\file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\upng-gzip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\upng.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\jpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-rect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-font-mcufont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-ss.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-jpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dlo\dlo-lhp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\jrpc\jrpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\dir-notify\dir-notify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lwsac\lwsac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lwsac\cached-file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\sha-1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lejp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lhp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\misc\lhp-ss.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\stdin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\system.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\policy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\async-dns\async-dns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\system\async-dns\async-dns-parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\dummy-callback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\close.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\network.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\vhost.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\pollfd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\service.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\sorted-usec-list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\wsi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\wsi-timeout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\adopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\txpacer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\pipe\ops-pipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\stub.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\async-ipc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\wol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\connect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\connect2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\connect3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\connect4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\sort-dns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\core-net\client\conmon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\header.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\date.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\parsers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\server\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\server\lws-spa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\cookie.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\server\lejp-conf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\h1\ops-h1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws\ops-ws.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws\client-ws.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws\client-parser-ws.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\ws\server-ws.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-skt\ops-raw-skt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\raw-file\ops-raw-file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\listen\ops-listen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\roles\http\client\client-http.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\event-libs\poll\poll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\secure-streams.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\policy-common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\system\captive-portal-detect\captive-portal-detect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\protocols\ss-raw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\policy-json.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\system\fetch-policy\fetch-policy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\protocols\ss-h1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\secure-streams\protocols\ss-ws.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\libwebsockets\lib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F7C6DC5C-8829-303F-B150-59F68A6C8EE0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

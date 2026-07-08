@@ -1,0 +1,221 @@
+#!/usr/bin/env python3
+"""Convert an audio file to a C source file containing 16 kHz/16-bit/mono PCM.
+
+The generated C file can be compiled directly into the ESP-IDF app and played by
+writing the PCM array to the speaker I2S channel.
+
+Default input support uses Python's standard ``wave`` module, so WAV files work
+without extra dependencies. For MP3/M4A/other formats, pass ``--ffmpeg`` and make
+sure ffmpeg is installed and available in PATH.
+"""
+
+from __future__ import annotations
+
+import argparse
+import math
+import pathlib
+import re
+import struct
+import subprocess
+import sys
+import wave
+
+
+DEFAULT_SAMPLE_RATE = 16_000
+
+
+def sanitize_symbol(name: str) -> str:
+    symbol = re.sub(r"\W+", "_", name.strip())
+    symbol = symbol.strip("_") or "audio_pcm"
+    if symbol[0].isdigit():
+        symbol = f"_{symbol}"
+    return symbol
+
+
+def run_ffmpeg(input_path: pathlib.Path, sample_rate: int) -> bytes:
+    cmd = [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        str(input_path),
+        "-ac",
+        "1",
+        "-ar",
+        str(sample_rate),
+        "-f",
+        "s16le",
+        "-acodec",
+        "pcm_s16le",
+        "-",
+    ]
+    try:
+        return subprocess.check_output(cmd)
+    except FileNotFoundError as exc:
+        raise SystemExit("ffmpeg not found. Install ffmpeg or use a WAV input without --ffmpeg.") from exc
+    except subprocess.CalledProcessError as exc:
+        raise SystemExit(f"ffmpeg failed with exit code {exc.returncode}") from exc
+
+
+def wav_to_pcm(input_path: pathlib.Path, sample_rate: int) -> bytes:
+    with wave.open(str(input_path), "rb") as wav:
+        channels = wav.getnchannels()
+        width = wav.getsampwidth()
+        src_rate = wav.getframerate()
+        frames = wav.readframes(wav.getnframes())
+
+    if width not in (1, 2, 3, 4):
+        raise SystemExit(f"Unsupported WAV sample width: {width} bytes")
+
+    samples = decode_wav_frames_to_mono_s16(frames, width, channels)
+    if src_rate != sample_rate:
+        samples = resample_linear(samples, src_rate, sample_rate)
+
+    return struct.pack(f"<{len(samples)}h", *samples)
+
+
+def decode_wav_sample(sample_bytes: bytes, width: int) -> int:
+    if width == 1:
+        return (sample_bytes[0] - 128) << 8
+    if width == 2:
+        return int.from_bytes(sample_bytes, "little", signed=True)
+    if width == 3:
+        extended = sample_bytes + (b"\xff" if sample_bytes[2] & 0x80 else b"\x00")
+        return int.from_bytes(extended, "little", signed=True) >> 8
+    if width == 4:
+        return int.from_bytes(sample_bytes, "little", signed=True) >> 16
+    raise ValueError(f"unsupported sample width: {width}")
+
+
+def decode_wav_frames_to_mono_s16(frames: bytes, width: int, channels: int) -> list[int]:
+    frame_count = len(frames) // (width * channels)
+    samples: list[int] = []
+
+    for frame_idx in range(frame_count):
+        total = 0
+        for ch in range(channels):
+            start = (frame_idx * channels + ch) * width
+            total += decode_wav_sample(frames[start : start + width], width)
+        samples.append(clamp_int16(round(total / channels)))
+
+    return samples
+
+
+def resample_linear(samples: list[int], src_rate: int, dst_rate: int) -> list[int]:
+    if not samples or src_rate == dst_rate:
+        return samples
+
+    dst_len = max(1, round(len(samples) * dst_rate / src_rate))
+    if dst_len == 1:
+        return [samples[0]]
+
+    result: list[int] = []
+    for idx in range(dst_len):
+        src_pos = idx * (len(samples) - 1) / (dst_len - 1)
+        left = int(src_pos)
+        right = min(left + 1, len(samples) - 1)
+        frac = src_pos - left
+        value = samples[left] * (1.0 - frac) + samples[right] * frac
+        result.append(clamp_int16(round(value)))
+
+    return result
+
+
+def clamp_int16(value: int) -> int:
+    return max(-32768, min(32767, value))
+
+
+def process_pcm(pcm: bytes, gain: float, peak: float, max_seconds: float | None, sample_rate: int) -> list[int]:
+    if len(pcm) % 2:
+        pcm = pcm[:-1]
+    samples = list(struct.unpack(f"<{len(pcm) // 2}h", pcm))
+
+    if max_seconds is not None and max_seconds > 0:
+        samples = samples[: int(max_seconds * sample_rate)]
+
+    if gain != 1.0:
+        samples = [clamp_int16(round(s * gain)) for s in samples]
+
+    if peak > 0:
+        current_peak = max((abs(s) for s in samples), default=0)
+        target_peak = int(32767 * min(peak, 1.0))
+        if current_peak > 0 and current_peak != target_peak:
+            scale = target_peak / current_peak
+            samples = [clamp_int16(round(s * scale)) for s in samples]
+
+    return samples
+
+
+def write_c_file(output_path: pathlib.Path, symbol: str, samples: list[int], sample_rate: int) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8", newline="\n") as f:
+        f.write("// This file is generated by tools/audio_to_pcm_c.py.\n")
+        f.write("// Format: signed 16-bit little-endian PCM, mono.\n")
+        f.write("#include <stddef.h>\n")
+        f.write("#include <stdint.h>\n\n")
+        f.write(f"const uint32_t {symbol}_sample_rate = {sample_rate}u;\n")
+        f.write(f"const size_t {symbol}_samples = {len(samples)}u;\n")
+        f.write(f"const int16_t {symbol}[] = {{\n")
+        for idx in range(0, len(samples), 12):
+            chunk = samples[idx : idx + 12]
+            f.write("    " + ", ".join(f"{s:6d}" for s in chunk) + ",\n")
+        f.write("};\n")
+
+
+def generate_tone(sample_rate: int, seconds: float, frequency: float, peak: float) -> list[int]:
+    total_samples = max(1, int(sample_rate * seconds))
+    amplitude = int(32767 * max(0.0, min(peak, 1.0)))
+    fade_samples = min(total_samples // 4, int(sample_rate * 0.01))
+    samples: list[int] = []
+
+    for idx in range(total_samples):
+        envelope = 1.0
+        if fade_samples > 0:
+            if idx < fade_samples:
+                envelope = idx / fade_samples
+            elif idx >= total_samples - fade_samples:
+                envelope = (total_samples - idx - 1) / fade_samples
+        value = math.sin(2.0 * math.pi * frequency * idx / sample_rate)
+        samples.append(clamp_int16(round(value * amplitude * envelope)))
+
+    return samples
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Generate a C PCM array for Lucy wakeup prompt playback.")
+    parser.add_argument("input", type=pathlib.Path, nargs="?", help="Input audio file. WAV works without dependencies.")
+    parser.add_argument("-o", "--output", type=pathlib.Path, default=pathlib.Path("main/lucy_wakeup_pcm.c"))
+    parser.add_argument("--symbol", default="lucy_wakeup_pcm", help="C array symbol name.")
+    parser.add_argument("--sample-rate", type=int, default=DEFAULT_SAMPLE_RATE)
+    parser.add_argument("--gain", type=float, default=1.0, help="Linear volume gain before normalization.")
+    parser.add_argument("--peak", type=float, default=0.85, help="Normalize peak to this full-scale ratio; 0 disables.")
+    parser.add_argument("--max-seconds", type=float, default=1.5, help="Trim output to this duration; 0 disables.")
+    parser.add_argument("--ffmpeg", action="store_true", help="Use ffmpeg for input decoding/resampling.")
+    parser.add_argument("--tone", action="store_true", help="Generate a built-in sine beep instead of reading an input file.")
+    parser.add_argument("--tone-frequency", type=float, default=880.0, help="Sine beep frequency for --tone.")
+    parser.add_argument("--tone-seconds", type=float, default=0.18, help="Sine beep duration for --tone.")
+    args = parser.parse_args()
+
+    symbol = sanitize_symbol(args.symbol)
+    if args.tone:
+        samples = generate_tone(args.sample_rate, args.tone_seconds, args.tone_frequency, args.peak)
+    else:
+        if args.input is None:
+            raise SystemExit("Input file is required unless --tone is used.")
+        if not args.input.exists():
+            raise SystemExit(f"Input file not found: {args.input}")
+
+        max_seconds = None if args.max_seconds <= 0 else args.max_seconds
+        pcm = run_ffmpeg(args.input, args.sample_rate) if args.ffmpeg else wav_to_pcm(args.input, args.sample_rate)
+        samples = process_pcm(pcm, args.gain, args.peak, max_seconds, args.sample_rate)
+
+    write_c_file(args.output, symbol, samples, args.sample_rate)
+
+    duration = len(samples) / args.sample_rate if args.sample_rate else math.nan
+    print(f"Generated {args.output} ({len(samples)} samples, {duration:.3f}s, symbol={symbol})")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

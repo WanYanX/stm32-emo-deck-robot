@@ -1,0 +1,8 @@
+C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\main.cpp;C:\Users\WanYan\Desktop\emo-desk-robot-server\build-zoo-check\emo-desk-robot-server.dir\Debug\main.obj
+C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\audio_codec.cpp;C:\Users\WanYan\Desktop\emo-desk-robot-server\build-zoo-check\emo-desk-robot-server.dir\Debug\audio_codec.obj
+C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\config.cpp;C:\Users\WanYan\Desktop\emo-desk-robot-server\build-zoo-check\emo-desk-robot-server.dir\Debug\config.obj
+C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\llm_client.cpp;C:\Users\WanYan\Desktop\emo-desk-robot-server\build-zoo-check\emo-desk-robot-server.dir\Debug\llm_client.obj
+C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\mimo_voice_client.cpp;C:\Users\WanYan\Desktop\emo-desk-robot-server\build-zoo-check\emo-desk-robot-server.dir\Debug\mimo_voice_client.obj
+C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\server.cpp;C:\Users\WanYan\Desktop\emo-desk-robot-server\build-zoo-check\emo-desk-robot-server.dir\Debug\server.obj
+C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\ws_voice_server.cpp;C:\Users\WanYan\Desktop\emo-desk-robot-server\build-zoo-check\emo-desk-robot-server.dir\Debug\ws_voice_server.obj
+C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\cJSON\cJSON.c;C:\Users\WanYan\Desktop\emo-desk-robot-server\build-zoo-check\emo-desk-robot-server.dir\Debug\cJSON.obj

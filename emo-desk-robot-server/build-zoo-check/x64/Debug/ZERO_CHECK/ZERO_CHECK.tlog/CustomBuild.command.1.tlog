@@ -1,0 +1,10 @@
+^C:\USERS\WANYAN\DESKTOP\STM32\2\EMO-DESK-ROBOT-SERVER\BUILD-ZOO-CHECK\CMAKEFILES\4D98FBA307B360B76D85194FCCC120D5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server -BC:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/WanYan/Desktop/stm32/2/emo-desk-robot-server/build-zoo-check/emo-desk-robot-server.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

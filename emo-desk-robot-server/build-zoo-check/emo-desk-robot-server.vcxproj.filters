@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\audio_codec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\llm_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\mimo_voice_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\ws_voice_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\cJSON\cJSON.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\WanYan\Desktop\stm32\2\emo-desk-robot-server\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F7C6DC5C-8829-303F-B150-59F68A6C8EE0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
